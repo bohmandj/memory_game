@@ -125,9 +125,15 @@ h1 {
 }
 
 #game .front {
+  z-index: 1;
   transform: rotateY(180deg);
   font-size: 1.5em;
   font-weight: 1000;
+  backface-visibility: hidden;
+}
+
+#game .clicked .front {
+  z-index: 3;
 }
 
 #game .back {
